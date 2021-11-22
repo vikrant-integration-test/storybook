@@ -7106,6 +7106,7 @@ __metadata:
     terser-webpack-plugin: ^5.0.3
     tmp: ^0.2.1
     ts-dedent: ^2.0.0
+    ts-morph: ^13.0.0
     tslib: ^2.1.0
     util-deprecate: ^1.0.2
     vue: ^2.6.10
@@ -7653,6 +7654,7 @@ __metadata:
     ts-dedent: ^2.0.0
     ts-jest: ^26.4.4
     ts-loader: ^8.0.14
+    ts-morph: ^13.0.0
     tsconfig-paths-webpack-plugin: ^3.3.0
     util-deprecate: ^1.0.2
     webpack: 4
@@ -9910,6 +9912,18 @@ __metadata:
     mkdirp: ^1.0.4
     path-browserify: ^1.0.1
   checksum: 58d9f75ace30cdcd3db193664c6610f24a13ccab9550a58e4c0d86f52221af4d09a272a5ee389adf150f4b5254404b143d7fc46954a910f69c4653a138fd6e92
+  languageName: node
+  linkType: hard
+
+"@ts-morph/common@npm:~0.12.0":
+  version: 0.12.0
+  resolution: "@ts-morph/common@npm:0.12.0"
+  dependencies:
+    fast-glob: ^3.2.7
+    minimatch: ^3.0.4
+    mkdirp: ^1.0.4
+    path-browserify: ^1.0.1
+  checksum: c504d6d5b9def367bfda690c4d41b037d718e80b38b5f533abbc37e41d72abe7dbdb99185d12a9878b5e151b7d5243031fad779b065dde01c626bd9cdcfe273b
   languageName: node
   linkType: hard
 
@@ -17339,6 +17353,15 @@ __metadata:
   version: 10.1.1
   resolution: "code-block-writer@npm:10.1.1"
   checksum: 8573816797ac20256b22d0c9c72743f6dcbcef2cb7e08e7761b3f7a3f2cdd3abe1c66ed9dda123f7c1e5e3746a5528fe3c09473758f1d1555fe4c69add334b28
+  languageName: node
+  linkType: hard
+
+"code-block-writer@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "code-block-writer@npm:11.0.0"
+  dependencies:
+    tslib: 2.3.1
+  checksum: eecd789d1471c340a9e32f03a5d16ad14f38e8788f6e21dc38d5599d84f719f94d7b2615d93e0a2bc587400e5edca6716720a760c2631c7423a0a5240cfa00ca
   languageName: node
   linkType: hard
 
@@ -43923,6 +43946,16 @@ resolve@1.19.0:
   languageName: node
   linkType: hard
 
+"ts-morph@npm:^13.0.0":
+  version: 13.0.0
+  resolution: "ts-morph@npm:13.0.0"
+  dependencies:
+    "@ts-morph/common": ~0.12.0
+    code-block-writer: ^11.0.0
+  checksum: 48255185de587ace81957f95cab6891dea5ecd9fd259a330136237abc789aaf4eafea1209c37dfa73e0a0703d1a3dbf344d8348e82f178d314490a2a38b34576
+  languageName: node
+  linkType: hard
+
 "ts-node@npm:^9.1.0":
   version: 9.1.1
   resolution: "ts-node@npm:9.1.1"
@@ -44010,6 +44043,13 @@ resolve@1.19.0:
   version: 2.1.0
   resolution: "tslib@npm:2.1.0"
   checksum: e95c8fb198d0209bba917db7b0f399d1aed3c4d6408bf1e4c30deebfeffb4076dc3786500100a3b5c55a535abaaeb5e6bd1da04d0cb49d4228e5a62362cee0b2
+  languageName: node
+  linkType: hard
+
+"tslib@npm:2.3.1":
+  version: 2.3.1
+  resolution: "tslib@npm:2.3.1"
+  checksum: 4efd888895bdb3b987086b2b7793ad1013566f882b0eb7a328384e5ecc0d71cafb16bbeab3196200cbf7f01a73ccc25acc2f131d4ea6ee959be7436a8a306482
   languageName: node
   linkType: hard
 
