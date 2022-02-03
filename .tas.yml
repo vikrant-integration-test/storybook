@@ -1,0 +1,14 @@
+framework: jest     
+preRun:
+  command:
+    - yarn install          
+postMerge:
+  pattern: 
+    - "./app/angular/src/builders/utils/run-compodoc.spec.ts"
+preMerge:
+  pattern:
+    - "./app/angular/src/builders/utils/run-compodoc.spec.ts"
+postRun:
+  command:
+    - yarn --version
+version: 1.0
