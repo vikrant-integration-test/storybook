@@ -4,10 +4,12 @@ preRun:
     - yarn install          
 postMerge:
   pattern: 
-    - "./app/angular/src/builders/utils/run-compodoc.spec.ts"
+    - "./app/**/*.spec.ts"
+    - "./app/**/*.test.ts"
 preMerge:
   pattern:
-    - "./app/angular/src/builders/utils/run-compodoc.spec.ts"
+    - "./app/**/*.spec.ts"
+    - "./app/**/*.test.ts"
 postRun:
   command:
     - yarn --version
