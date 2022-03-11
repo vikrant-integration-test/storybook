@@ -5,19 +5,11 @@ preRun:
 postMerge:
   pattern: 
     - "./app/**/*.spec.ts"
-    - "./app/**/*.test.ts"
-    - "./addons/**/*.test.ts"
-    - "./examples/**/*.spec.ts"
-    - "./examples/**/*.test.js"
-    - "./lib/**/*.test.ts"
+
 preMerge:
   pattern:
     - "./app/**/*.spec.ts"
-    - "./app/**/*.test.ts"
-    - "./addons/**/*.test.ts"
-    - "./examples/**/*.spec.ts"
-    - "./examples/**/*.test.js"
-    - "./lib/**/*.test.ts"
+
 postRun:
   command:
     - yarn --version
